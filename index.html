@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity Developer — Резюме</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #2d3436;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 800px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 48px 56px;
+  }
+
+  /* Шапка — контакты в одну строку */
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a1a2e;
+  }
+  header .headline {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  header .contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  header .contacts a {
+    color: #0984e3;
+    text-decoration: none;
+  }
+  header .contacts a:hover { text-decoration: underline; }
+  header .contacts .sep { color: #ccc; }
+
+  /* Секции */
+  section { margin-bottom: 28px; }
+  section:last-child { margin-bottom: 0; }
+  h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #0984e3;
+    border-bottom: 1.5px solid #0984e3;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+  }
+
+  /* Навыки — простые строки */
+  .skills-group { margin-bottom: 10px; }
+  .skills-group strong {
+    display: inline-block;
+    width: 140px;
+    font-size: 0.9rem;
+    color: #333;
+    vertical-align: top;
+  }
+  .skills-group span {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* Опыт / Проекты */
+  .exp-item {
+    margin-bottom: 18px;
+  }
+  .exp-item:last-child { margin-bottom: 0; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .exp-header h3 {
+    font-size: 1rem;
+    color: #1a1a2e;
+  }
+  .exp-header .date {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  .exp-meta {
+    font-size: 0.88rem;
+    color: #666;
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+  .exp-item ul {
+    padding-left: 18px;
+    margin: 0;
+  }
+  .exp-item li {
+    font-size: 0.92rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  /* Образование */
+  .edu-item { margin-bottom: 8px; }
+  .edu-item strong { color: #1a1a2e; }
+  .edu-item span { color: #666; font-size: 0.9rem; }
+
+  @media (max-width: 600px) {
+    .container { margin: 0; border-radius: 0; padding: 24px; }
+    header .contacts { flex-direction: column; gap: 4px; }
+    .skills-group strong { width: auto; display: block; margin-bottom: 2px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ===== ШАПКА ===== -->
+  <header>
+    <h1>Алексей</h1>
+    <div class="headline">Unity C# Developer · 3 года · Mobile Games, C#, Unity</div>
+    <div class="contacts">
+      <span>hadulinpositive@gmail.com</span>
+      <span class="sep">|</span>
+      <span>+7 951 164-73-96</span>
+      <span class="sep">|</span>
+      <a href="https://github.com/f0lool" target="_blank">github.com/f0lool</a>
+    </div>
+  </header>
+
+  <!-- ===== НАВЫКИ ===== -->
+  <section>
+    <h2>Технические навыки</h2>
+    <div class="skills-group">
+      <strong>Языки:</strong>
+      <span>C#</span>
+    </div>
+    <div class="skills-group">
+      <strong>Движок:</strong>
+      <span>Unity</span>
+    </div>
+    <div class="skills-group">
+      <strong>UI / Визуал:</strong>
+      <span>UGUI, UI Toolkit, Shader Graph, VFX Graph</span>
+    </div>
+    <div class="skills-group">
+      <strong>Мобильные:</strong>
+      <span>Оптимизация под Android/iOS, Addressables, Unity Ads, Yandex SDK</span>
+    </div>
+    <div class="skills-group">
+      <strong>Инструменты:</strong>
+      <span>Git/GitHub, Firebase, Unity Analytics, GameAnalytics, Yandex Metrica</span>
+    </div>
+    <div class="skills-group">
+      <strong>Архитектура:</strong>
+      <span>SOLID, паттерны (MVC, Observer, State, Command, Factory, паттерны GoF)</span>
+    </div>
+    <div class="skills-group">
+      <strong>ИИ-инструменты:</strong>
+      <span>ChatGPT, Mimo Code, Grok, Deepseek, Midjourney — использование ИИ для генерации кода, текстур, звуков, документации и оптимизации рабочего процесса</span>
+    </div>
+  </section>
+
+  <!-- ===== ОПЫТ ===== -->
+  <section>
+    <h2>Опыт работы</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>Unity Developer — Яндекс Игры</h3>
+        <span class="date">2023 — н.в.</span>
+      </div>
+      <div class="exp-meta">Фриланс / личные проекты · solo</div>
+      <ul>
+        <li>Разработал и опубликовал <strong>5 игр</strong> на платформе Яндекс Игры</li>
+        <li>Выполнил все этапы жизненного цикла: прототип → разработка → тестирование → публикация</li>
+        <li>Реализовывал рекламную монетизацию, аналитику, локализацию, сохранения</li>
+        <li>Оптимизировал загрузку и производительность под веб-платформу</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>Unity Developer — Мобильная игра (Китай)</h3>
+        <span class="date">2025</span>
+      </div>
+      <div class="exp-meta">Фриланс</div>
+      <ul>
+        <li>Работал над мобильной игрой для китайского рынка</li>
+        <li>Адаптировал интерфейс и контент под локализацию (китайский язык)</li>
+        <li>Интегрировал SDK для аналитики и монетизации, специфичные для китайского рынка</li>
+        <li>Разрабатывал новые режимы и механики</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>Game Jam — ПК-игра</h3>
+        <span class="date">2026</span>
+      </div>
+      <div class="exp-meta">Команда из 4 человек · 48 часов</div>
+      <ul>
+        <li>Участвовал в геймджеме — разработал ПК-игру за <strong>2 дня</strong> в команде из 4 человек</li>
+        <li>Отвечал за геймплей-программирование и решал все технические проблемы второго программиста</li>
+        <li>Координировал работу с другими участниками через Git</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ===== ПРОЕКТЫ ===== -->
+  <section>
+    <h2>Ключевые проекты</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>Banana — 2D Web-игра для Яндекс Игр</h3>
+        <span class="date"><a href="https://github.com/f0lool/Banana" target="_blank">github.com/f0lool/Banana</a></span>
+      </div>
+      <ul>
+        <li>Разработал 2D mobile/web игру с нуля до публикации на Яндекс Игры</li>
+        <li>Реализовал AI-систему на Behavior Designer для поведения NPC</li>
+        <li>Интегрировал YandexGame SDK, настроил WebGL-экспорт и рекламную монетизацию</li>
+        <li>Применил архитектуру на ScriptableObjects для конфигурации данных</li>
+        <li>Создал кастомные шейдеры (ShaderLab/HLSL) и партикл-системы</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>TanksBattle — 3D Экшен с танками</h3>
+        <span class="date"><a href="https://github.com/f0lool/TanksBattle" target="_blank">github.com/f0lool/TanksBattle</a></span>
+      </div>
+      <ul>
+        <li>Разработал 3D игру с танковыми боями на Unity</li>
+        <li>Создал кастомные шейдеры (ShaderLab/HLSL) для визуальных эффектов</li>
+        <li>Интегрировал аналитику Adjust для отслеживания метрик</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>ReactiveClicker — Idle/Clicker игра</h3>
+        <span class="date"><a href="https://github.com/f0lool/ReactiveClicker" target="_blank">github.com/f0lool/ReactiveClicker</a></span>
+      </div>
+      <ul>
+        <li>Создал кликер с реактивной механикой и системой прогрессии</li>
+        <li>Разработал архитектуру на ScriptableObjects для баланса и конфигурации</li>
+        <li>Реализовал кастомные шейдеры для визуальных эффектов</li>
+        <li>Настроил современную систему ввода (Input System)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ОБРАЗОВАНИЕ ===== -->
+  <section>
+    <h2>Образование</h2>
+    <div class="edu-item">
+      <strong>GeekBrains — Онлайн-школа</strong><br>
+      <span>2021 — 2023 · Полноценное обучение программированию на C# и Unity</span>
+    </div>
+    <div class="edu-item">
+      <strong>Самообразование</strong><br>
+      <span>Постоянно изучаю новые архитектурные решения.</span>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
